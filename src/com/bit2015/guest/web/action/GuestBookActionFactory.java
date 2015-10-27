@@ -2,8 +2,8 @@ package com.bit2015.guest.web.action;
 
 import com.bit2015.web.action.Action;
 import com.bit2015.web.action.ActionFactory;
+import com.bit2015.web.action.AjaxIndexAction;
 import com.bit2015.web.action.DeleteAction;
-
 import com.bit2015.web.action.DeleteFormAction;
 import com.bit2015.web.action.IndexAction;
 import com.bit2015.web.action.InsertAction;
@@ -23,6 +23,8 @@ public class GuestBookActionFactory extends ActionFactory {
 			action =new DeleteAction();
 		}else if("insert".equals(actionName)){
 			action = new InsertAction();
+		}else if("ajax".equals(actionName)){
+			action = new AjaxIndexAction();
 		}
 		else{
 			//dafault인 경우

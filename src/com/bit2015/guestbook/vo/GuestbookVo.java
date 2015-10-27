@@ -7,6 +7,7 @@ public class GuestbookVo {
 	private String password;
 	private String message;
 	private String reg_date;
+	
 	public Long getNo() {
 		return no;
 	}
